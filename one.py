@@ -25,13 +25,23 @@ def predict_sentiment(text):
 # Setting the page configurations
 st.set_page_config(
     page_title="Sentiment Analysis App",
-    page_icon=":speech_balloon:",
+    page_icon=":smile:",
     layout="wide",
     initial_sidebar_state="auto",
 )
 
-# Allow custom CSS
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# Add description and title
+st.write("""
+# How Positive or Negative is your Text?
+Enter some text and we'll tell you if it has a positive, negative, or neutral sentiment!
+""")
+
+
+# Add image
+image = st.image("https://i0.wp.com/thedatascientist.com/wp-content/uploads/2018/10/sentiment-analysis.png", width=400)
+
+# Get user input
+text = st.text_input("Enter some text here:")
 
 # Define the CSS style for the app
 st.markdown(
@@ -49,32 +59,13 @@ h1 {
 unsafe_allow_html=True
 )
 
-# Add logo to the app
-# from PIL import Image
-# image = Image.open('logo.jpg')
-# st.image(image, caption='Sentiment Analysis App')
 
-# Create the Streamlit app
-st.title("Sentiment Analysis")
-
-st.write("This app uses a pre-trained machine learning model to predict the sentiment of a given text. Simply enter a piece of text and the app will classify it as positive, negative or neutral.")
-
-text = st.text_input("")
+# Show sentiment output
 if text:
     sentiment = predict_sentiment(text)
-    st.write("Sentiment:", sentiment)
-
-# Add error handling
-if not text:
-    st.write("Please enter a text above to analyze.")
-elif sentiment is None:
-    st.write("Sorry, the model failed to make a prediction for this text. Please try again with a different text.") 
-
-# # Add footer to the app
-# st.markdown(
-# """
-# ---
-# Sentiment Analysis App developed by Emmanuel Ikogho Okeoghene
-# """,
-# unsafe_allow_html=True
-# )
+    if sentiment == "Positive":
+        st.success(f"The sentiment is {sentiment}!")
+    elif sentiment == "Negative":
+        st.error(f"The sentiment is {sentiment}.")
+    else:
+        st.warning(f"The sentiment is {sentiment}.")
