@@ -9,18 +9,15 @@ tokenizer = transformers.AutoTokenizer.from_pretrained("ikoghoemmanuell/finetune
 # Define the function for sentiment analysis
 @st.cache_resource
 def predict_sentiment(text):
-    # Tokenize the input text
-    inputs = tokenizer(text, return_tensors="pt")
-    # Pass the tokenized input through the model
-    outputs = model(**inputs)
-    # Get the predicted class and return the corresponding sentiment
-    predicted_class = torch.argmax(outputs.logits, dim=-1).item()
-    if predicted_class == 0:
-        return "Negative"
-    elif predicted_class == 1:
-        return "Neutral"
-    else:
-        return "Positive"
+    # Load the pipeline.
+    pipeline = transformers.pipeline("sentiment-analysis")
+
+    # Predict the sentiment.
+    prediction = pipeline(text)
+    sentiment = prediction[0]["label"]
+    score = prediction[0]["score"]
+
+    return sentiment, score
 
 # Setting the page configurations
 st.set_page_config(
@@ -54,18 +51,16 @@ h1 {
     color: #4e79a7;
 }
 </style>
-
 """,
 unsafe_allow_html=True
 )
 
-
 # Show sentiment output
 if text:
-    sentiment = predict_sentiment(text)
+    sentiment, score = predict_sentiment(text)
     if sentiment == "Positive":
-        st.success(f"The sentiment is {sentiment}!")
+        st.success(f"The sentiment is {sentiment} with a score of {score*100:.2f}%!")
     elif sentiment == "Negative":
-        st.error(f"The sentiment is {sentiment}.")
+        st.error(f"The sentiment is {sentiment} with a score of {score*100:.2f}%!")
     else:
-        st.warning(f"The sentiment is {sentiment}.")
+        st.warning(f"The sentiment is {sentiment} with a score of {score*100:.2f}%!")
