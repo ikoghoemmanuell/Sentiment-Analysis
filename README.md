@@ -3,9 +3,9 @@
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/your-github-username)
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/your-github-username?tab=repositories)
 [![View My Profile](https://img.shields.io/badge/MEDIUM-Article-purple?logo=Medium)](https://medium.com/@emmanuel.ikogho/classification-predicting-sepsis-with-machine-learning-and-fastapi-3a3d05d0b5b4)
-[![Streamlit App](https://img.shields.io/badge/Docker-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/Sepsis-Prediction-With-FastAPI)
+[![Streamlit App](https://img.shields.io/badge/Docker-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/Sentiment-analysis-WebApp)
 
-## Image
+![Fashion Model Content Fashion(1)](https://github.com/ikoghoemmanuell/Sentiment-Analysis-with-Finetuned-Models/assets/102419217/dabc75ec-e328-4bd5-b39e-91c85c5b06bf)
 
 # Introduction
 
@@ -56,6 +56,7 @@ Please, [go to the website and sign-in](https://huggingface.co/) to access all t
 The evaluation metric for this challenge is the **Root Mean Squared Error**.
 
 ## Screenshots
+![ezgif com-optimize](https://github.com/ikoghoemmanuell/Sentiment-Analysis-with-Finetuned-Models/assets/102419217/de9740aa-dcc8-4215-bbf5-525f44db0050)
 
 ## Ressources
 
