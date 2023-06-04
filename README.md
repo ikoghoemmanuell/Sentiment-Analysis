@@ -63,7 +63,7 @@ The evaluation metric for this challenge is the **Root Mean Squared Error**.
 ### Gradio App
 ![ezgif com-crop (1)](https://github.com/ikoghoemmanuell/Sentiment-Analysis-with-Finetuned-Models/assets/102419217/e6177a08-f3b0-4bda-9a83-7031c36235b0)
 
-## Ressources
+## Resources
 
 1. [Quick intro to NLP](https://www.youtube.com/watch?v=CMrHM8a3hqw)
 1. [Getting Started With Hugging Face in 15 Minutes](https://www.youtube.com/watch?v=QEaBAZQCtwE)
