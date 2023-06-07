@@ -1,10 +1,10 @@
 # Sentiment Analysis with Finetuned Models
 
-[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/ikoghoemmanuell)
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ikoghoemmanuell?tab=repositories)
 [![Read Article](https://img.shields.io/badge/Read-Article-purple)](https://github.com/ikoghoemmanuell/Sentiment-Analysis-with-Finetuned-Models/blob/main/Article.md)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/Sentiment-analysis-WebApp)
 [![Gradio App](https://img.shields.io/badge/Gradio-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/sentiment-Classifier-App-Gradio)
+[![Website](https://img.shields.io/badge/My-Website-darkgreen)](https://emmanuelikogho.netlify.app/)
 
 ![Fashion Model Content Fashion(1)](https://github.com/ikoghoemmanuell/Sentiment-Analysis-with-Finetuned-Models/assets/102419217/dabc75ec-e328-4bd5-b39e-91c85c5b06bf)
 
